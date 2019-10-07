@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XDY-01-gmN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="3om-px-g8t">
+            <objects>
+                <navigationController id="XDY-01-gmN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Ct-Xv-nGR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CMn-og-D42"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5jG-b6-Nry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-823" y="-143"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Tdj-lN-ll4">
+                                <rect key="frame" x="20" y="398" width="374" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbu-XP-98v">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="twC-Pr-fDn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="StartButton">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="u7o-o9-uSZ" kind="show" id="hJc-Ic-La9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRA-rO-PpW">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="40"/>
+                                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Memory Graph">
+                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Yvk-9Z-4r4" kind="show" id="8NQ-x6-f9N"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tdj-lN-ll4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3u5-XT-pHb"/>
+                            <constraint firstItem="Tdj-lN-ll4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5AC-aO-dkQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tdj-lN-ll4" secondAttribute="trailing" constant="20" id="eFM-QW-Bfz"/>
+                            <constraint firstItem="Tdj-lN-ll4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fa5-LU-lQi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dQ5-5d-iff"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="-143"/>
+        </scene>
+        <!--Time Profilling TestVC-->
+        <scene sceneID="MZ8-pd-WHM">
+            <objects>
+                <viewController id="u7o-o9-uSZ" customClass="TimeProfillingTestVC" customModule="InstrumentPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8GG-Kx-vfg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XiK-2i-Sch">
+                                <rect key="frame" x="75" y="428.5" width="264" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Start Running Time Profiling"/>
+                                <connections>
+                                    <action selector="StartTime:" destination="u7o-o9-uSZ" eventType="touchUpInside" id="8dA-r0-FXe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XiK-2i-Sch" firstAttribute="centerY" secondItem="8GG-Kx-vfg" secondAttribute="centerY" id="Sha-cp-tOb"/>
+                            <constraint firstItem="XiK-2i-Sch" firstAttribute="centerX" secondItem="8GG-Kx-vfg" secondAttribute="centerX" id="euY-Rt-v85"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="C2h-EU-bHK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="G4C-nU-Z8l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Brb-jL-jxd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084" y="-348"/>
+        </scene>
+        <!--Memory Graph Debugger-->
+        <scene sceneID="EuM-P9-jfG">
+            <objects>
+                <viewController id="Yvk-9Z-4r4" customClass="MemoryGraphDebugger" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IFx-6X-gKM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lZ-3l-UGd">
+                                <rect key="frame" x="163" y="433" width="88" height="30"/>
+                                <state key="normal" title="CreateGraph"/>
+                                <connections>
+                                    <action selector="CreateLeakGraph:" destination="Yvk-9Z-4r4" eventType="touchUpInside" id="cro-N4-HkH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3lZ-3l-UGd" firstAttribute="centerX" secondItem="IFx-6X-gKM" secondAttribute="centerX" id="0CW-3C-zku"/>
+                            <constraint firstItem="3lZ-3l-UGd" firstAttribute="centerY" secondItem="IFx-6X-gKM" secondAttribute="centerY" id="2z0-4W-CsU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hrJ-ng-DuK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ywj-Uf-TjJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yUt-Tl-aqz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1083" y="365"/>
+        </scene>
+    </scenes>
+</document>
